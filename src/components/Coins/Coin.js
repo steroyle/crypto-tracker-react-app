@@ -10,11 +10,6 @@ const Coin = (props) => {
   return (
     <div className={`${coinWrapperClasses} p-4 flex flex-col border justify-between rounded-xl relative`}>
       <FavouriteIcon
-        height="8"
-        width="8"
-        top="4"
-        right="3"
-        position="absolute"
         id={props.id}
         addFavouriteCoin={props.addFavouriteCoin}
         removeFavouriteCoin={props.removeFavouriteCoin}

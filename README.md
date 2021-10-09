@@ -2,11 +2,12 @@
 
 ## Live Demo
 
-[https://crypto-tracker-react-app.netlify.app](https://crypto-tracker-react-app.netlify.app)
+[https://crypto-tracker-api-react-app.netlify.app](https://crypto-tracker-api-react-app.netlify.app)
 
 ## Built using
 
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Tailwind CSS](https://tailwindcss.com)
 
 ## Setup
 

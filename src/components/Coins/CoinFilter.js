@@ -4,7 +4,7 @@ const CoinFilter = (props) => {
   return (
     <form onSubmit={(event) => { event.preventDefault() }}>
       <input
-        className="p-2 border border-blue-200 rounded"
+        className="p-2 w-52 border border-blue-200 rounded"
         type="text"
         placeholder="Search coins"
         value={props.search}

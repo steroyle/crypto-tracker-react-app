@@ -16,7 +16,7 @@ const FavouriteIcon = (props) => {
     <svg
       onClick={onFavouriteClickHandler}
       xmlns="http://www.w3.org/2000/svg"
-      className={`${iconColour} h-8 w-8 top-4 right-3 absolute cursor-pointer`}
+      className={`${iconColour} h-8 w-8 top-4 right-3 absolute cursor-pointer select-none`}
       viewBox="0 0 20 20"
       fill="currentColor"
     >

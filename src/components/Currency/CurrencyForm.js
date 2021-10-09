@@ -3,10 +3,10 @@ import React from 'react'
 const CurrencyForm = (props) => {
 
   return (
-    <form className="my-4 space-x-2">
-      <label>Currency</label>
+    <form className="my-4">
+      <label className="hidden md:inline pr-2">Currency</label>
       <select
-        className="p-2 border border-blue-200 rounded"
+        className="p-2 bg-white border border-blue-200 rounded"
         name="currency"
         value={props.currency}
         onChange={props.onCurrencyChange}

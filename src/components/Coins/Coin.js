@@ -3,6 +3,8 @@ import FavouriteIcon from '../UI/FavouriteIcon'
 
 const Coin = (props) => {
 
+  const currencySymbol = props.currency === 'gbp' ? '£' : ''
+  const formattedPrice = currencySymbol + props.currentPrice.toLocaleString()
   const priceChangePercentage = props.priceChangePercent.toFixed(2)
   const priceColourClasses = priceChangePercentage < 0 ? 'bg-red-100 text-red-400' : 'bg-green-100 text-green-400'
   const coinWrapperClasses = props.isFavourite ? 'bg-yellow-50 border-yellow-500' : 'bg-white border-blue-200'
@@ -21,7 +23,7 @@ const Coin = (props) => {
       </div>
       <div className="flex justify-between items-center space-x-2 text-sm">
         <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-blue-100 bg-blue-500 rounded">{props.symbol.toUpperCase()}</span>
-        <span>£{props.currentPrice.toLocaleString()}</span>
+        <span>{formattedPrice}</span>
         <span className={priceColourClasses + " inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none rounded"}>{priceChangePercentage}%</span>
       </div>
     </div>

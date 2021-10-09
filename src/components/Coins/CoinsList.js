@@ -14,6 +14,7 @@ const CoinsList = (props) => {
             image={coin.image}
             currentPrice={coin.current_price}
             priceChangePercent={coin.price_change_percentage_24h}
+            currency={props.currency}
             addFavouriteCoin={props.addFavouriteCoin}
             removeFavouriteCoin={props.removeFavouriteCoin}
             isFavourite={props.favouriteCoins.includes(coin.id) ? true : false }

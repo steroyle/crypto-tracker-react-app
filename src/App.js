@@ -136,6 +136,7 @@ function App() {
         coins.length !== 0 &&
         <CoinsList
           coins={filteredCoins}
+          currency={currency}
           addFavouriteCoin={addFavouriteCoinHandler}
           removeFavouriteCoin={removeFavouriteCoinHandler}
           favouriteCoins={favouriteCoins}
